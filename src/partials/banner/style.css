@@ -1,0 +1,61 @@
+@import "../../assets/css/main.css";
+
+.vertical-align {
+  writing-mode: vertical-rl;
+}
+
+.follow__link {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.barre {
+  width: 1.8px;
+}
+
+.social__links a {
+  padding: 5px;
+  background: #0db760;
+  color: white;
+  border-radius: 0.3rem;
+}
+
+.cover {
+  position: relative;
+}
+.myprofil {
+  z-index: 18;
+
+  position: relative;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.cover::after {
+  content: "";
+  background: #0db760;
+  position: absolute;
+  bottom: 0;
+  height: 75%;
+  width: 80%;
+  left: 5%;
+  z-index: 0;
+  display: flex;
+
+  border-radius: 0.2rem;
+}
+
+.cover::before {
+  content: "";
+  border: 3px solid black;
+  position: absolute;
+  bottom: -3%;
+  height: 75%;
+  width: 80%;
+  left: 1%;
+  z-index: 2;
+  display: flex;
+
+  border-radius: 0.2rem;
+}
